@@ -319,5 +319,21 @@
   </div>
 </footer>
 
+<script>
+fetch('/content/about.json')
+  .then(res => res.json())
+  .then(data => {
+    // Деятельность завода
+    document.querySelector('#factory-title').textContent = data.factory_activity.title;
+    document.querySelector('#factory-text').textContent = data.factory_activity.text;
+    document.querySelector('#factory-image').src = data.factory_activity.image;
+
+    // Производство крабовых палочек
+    document.querySelector('#crab-title').textContent = data.crab_sticks.title;
+    document.querySelector('#crab-text').textContent = data.crab_sticks.text;
+    document.querySelector('#crab-image').src = data.crab_sticks.image;
+  });
+</script>
+  
 </body>
 </html>
