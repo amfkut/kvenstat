@@ -4,7 +4,9 @@ CMS.init({
       name: "github",
       repo: "amfkut/kvenstat",
       branch: "main",
-      base_url: "https://your-oauth-server.vercel.app", // ← заменить на свой OAuth-backend
+      base_url: "https://your-oauth-server.vercel.app", // ← заменить на свой OAuth-backend Что важно после деплоя OAuth-backend:
+                                                        // Заменить base_url на реальный URL где расположен OAuth-сервер.
+                                                        // Если меняешь папку для медиа, соответствующе обновить media_folder / public_folder.
       auth_endpoint: "auth"
     },
     media_folder: "images/uploads",
