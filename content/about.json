@@ -1,0 +1,12 @@
+{
+  "factory_activity": {
+    "title": "Деятельность завода",
+    "text": "Здесь текст деятельности завода...",
+    "image": "images/uploads/activity.jpg"
+  },
+  "crab_sticks": {
+    "title": "Производство крабовых палочек",
+    "text": "Здесь текст о производстве крабовых палочек...",
+    "image": "images/uploads/crabsticks.jpg"
+  }
+}
