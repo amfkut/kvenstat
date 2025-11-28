@@ -14,28 +14,28 @@ CMS.init({
 
     collections: [
       {
-        name: "home",
-        label: "Главная страница",
-        file: "content/home.json",
-        fields: [
-          { name: "title", label: "Заголовок", widget: "string" },
-          { name: "subtitle", label: "Подзаголовок", widget: "string" },
-          { name: "description", label: "Описание", widget: "text" },
-          { name: "image", label: "Главное изображение", widget: "image" }
-        ]
-      },
-      {
-        name: "gallery",
-        label: "Галерея",
-        file: "content/gallery.json",
+        name: "about",
+        label: "О компании — Деятельность и Крабовые палочки",
+        file: "content/about.json",
         fields: [
           {
-            name: "items",
-            label: "Изображения",
-            widget: "list",
+            label: "Деятельность завода",
+            name: "factory_activity",
+            widget: "object",
             fields: [
-              { name: "title", label: "Название", widget: "string" },
-              { name: "image", label: "Картинка", widget: "image" }
+              { label: "Заголовок", name: "title", widget: "string" },
+              { label: "Текст", name: "text", widget: "text" },
+              { label: "Картинка", name: "image", widget: "image" }
+            ]
+          },
+          {
+            label: "Производство крабовых палочек",
+            name: "crab_sticks",
+            widget: "object",
+            fields: [
+              { label: "Заголовок", name: "title", widget: "string" },
+              { label: "Текст", name: "text", widget: "text" },
+              { label: "Картинка", name: "image", widget: "image" }
             ]
           }
         ]
